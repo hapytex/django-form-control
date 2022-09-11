@@ -1,3 +1,4 @@
+from django import forms
 from form_control.constants import FORM_CONTROL
 
 class FormControlMixin:
@@ -10,3 +11,9 @@ class FormControlMixin:
             if FROM_CONTROL not in cls:
                 cls[FORM_CONTROL] = None
                 field.widget.attrs['class'] = ' '.join(cls)
+
+class FormControlForm(FormControlMixin, forms.Form):
+    pass
+
+class FormControlModelForm(FormControlMixin, forms.ModelForm):
+    pass
