@@ -1,5 +1,5 @@
 [project]
-name = "django-single-login"
+name = "django-form-control"
 version = "0.1.0"
 authors = [{name = "Willem Van Onsem", email = "hapythexeu+gh@gmail.com"}]
 
@@ -8,7 +8,7 @@ requires = ['setuptools>=45', 'wheel', 'setuptools_scm[toml]>=6.2']
 build-backend = 'setuptools.build_meta:__legacy__'
 
 [tool.setuptools_scm]
-write_to = "single_session/__init__.py"
+write_to = "form_control/__init__.py"
 
 [tool.black]
 extend-exclude = '(.*/migrations/.*|setup)\.py'
